@@ -1,0 +1,297 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+background-color: white;
+font-family: "Playfair Display", serif;
+}
+
+nav {
+    margin: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.img_papelaria {
+    width: 10rem;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links > ul > li > a {
+    color: black;
+}
+
+.links > ul > li > a:hover {
+    color: red;
+    transition: 0.3s;
+}
+
+.login_nav > li > a {
+    color: rgb(96, 160, 244);
+    font-weight: 600;
+    outline: solid 2px rgb(96, 160, 244);
+    padding: 0.5rem;
+    border-radius: 2px;  
+}
+
+.carrinho_nav > li > a {
+    color: rgb(96, 160, 244);
+    font-weight: 600;
+    outline: solid 2px rgb(96, 160, 244);
+    padding: 0.5rem;
+    border-radius: 2px;
+}
+
+.carrinho_nav > li > a:hover {
+    color: red;
+    transition: 0.3s;
+}
+
+.login_nav > li > a:hover {
+    color: red;
+    transition: 0.3s;
+}
+
+.img_carrinho {
+    width: 1rem;
+}
+
+.links > li {
+    margin: 0 2rem 0 2rem;
+}
+
+.links_5 {
+    display: flex;
+}
+
+.links_5 > li {
+    margin: 0 1rem 0 1rem;
+}
+
+.imagens {
+    width: 5rem;
+    background-color: rgb(96, 160, 244);
+}
+
+.main_section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.main_section > div > h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.main_section > div > p {
+    color: white;
+    font-size: 2rem;
+    width: 60rem;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.main_section > div > li > a {
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+}
+
+.main_section > div > li > a:hover {
+    color: red;
+    transition: 0.3s;
+}
+
+.telefone {
+    width: 0.8rem;
+}
+
+.coisas {
+    margin-top: 40vh;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.texto_inicial {
+    background-color: rgb(96, 160, 244);
+    border-radius: 4rem;
+    padding: 2rem;
+}
+
+.coisas > div {
+    margin: 2rem 3.5rem 2rem 3.5rem;
+    margin-top: 20vh;
+}
+
+.outros {
+    margin-top: 1.2rem;
+}
+
+#burguer {
+    cursor: pointer;
+}
+
+.img_clube {
+    width: 25rem;
+    margin-top: 4rem;
+}
+
+.section_clube {
+    display: flex;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section_clube > div > h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+.section_clube > div > p {
+    font-size: 1.5rem;
+    display: flex;
+    margin: 0.5rem auto auto auto;
+    justify-content: center;
+    color: white;
+}
+
+.section_clube > div > li > a {
+    margin: 2rem auto auto auto;
+    display: flex;
+    justify-content: center; 
+    color: black;
+    font-weight: 600;
+}
+
+.section_clube > div > li > a:hover {
+    color: red;
+    transition: 0.3s;
+}
+
+.div_clube {
+    margin: 3rem 0 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(96, 160, 244);
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+.img_footer {
+    width: 15rem;
+    margin-top: 5rem;
+}
+
+footer {
+    background-color: rgb(96, 160, 244);
+    margin-top: 10rem;
+    height: 20rem;
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0 2rem 0;
+}
+
+.links_footer {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.links_footer > ul > li {
+    margin: 1.4rem;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.links_footer > ul > li > a {
+    color: black;
+    font-weight: 600;
+}
+
+.links_footer > ul > li > a:hover {
+    color: red;
+    transition: 0.3s;
+}
+
+.header_links {
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+
+@media screen and (min-width: 1150px) {
+    #burguer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 697px) {
+    .login_nav {
+        display: none;
+    }
+    .carrinho_nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .links_5 {
+        position: absolute;
+        text-align: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: fit-content;
+        margin: 6rem auto auto auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .main_section > div > p {
+        font-size: 1rem;
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .div_clube > h2 {
+        font-size: 1.5rem;
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 721px) {
+    .header_links {
+        color: black;
+    }
+}
